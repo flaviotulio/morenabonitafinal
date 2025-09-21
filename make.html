@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Morena Bonita - Maquiagem</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside id="sidebar">
+  <h2 class="text-center">Menu</h2>
+  <button class="btn btn-secondary w-100 mb-2" onclick="modoEscuro()">🌙 Modo Escuro</button>
+  <button class="btn btn-info w-100 mb-2" onclick="suporte()">📞 Suporte</button>
+  <button class="btn btn-outline-primary w-100 mb-3" onclick="window.location.href='login.html'">🔑 Login</button>
+
+  <h4>🛒 Carrinho</h4>
+  <div id="carrinho"><p>Carrinho vazio</p></div>
+  <button class="btn btn-danger w-100 mt-2" onclick="limparCarrinho()">Esvaziar</button>
+</aside>
+
+<header class="p-3 text-center">
+ <img src="logo.png" alt="Logo do site" width="300" height="auto">
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+  <div class="container">
+    <ul class="navbar-nav mx-auto gap-5">
+      <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+      <li class="nav-item"><a class="nav-link" href="skincare.html">Skin Care</a></li>
+      <li class="nav-item"><a class="nav-link" href="make.html">Maquiagem</a></li>
+      <li class="nav-item"><a class="nav-link" href="perfume.html">Perfumaria</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h2 class="text-center mb-4">Maquiagem</h2>
+  <div class="row">
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="rosamosqueta.png" class="card-img-top" alt="Pó rosa mosqueta">
+        <div class="card-body">
+          <h5 class="card-title">Pó rosa mosqueta</h5>
+          <p class="card-text price">R$ 12,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Pó rosa mosqueta')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="pobanana.png" class="card-img-top" alt="Pó banana">
+        <div class="card-body">
+          <h5 class="card-title">Pó banana</h5>
+          <p class="card-text price">R$ 12,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Pó banana')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="esponja.png" class="card-img-top" alt="Esponja Feels Soft Blender - Ruby Rose">
+        <div class="card-body">
+          <h5 class="card-title">Esponja Feels Soft Blender - Ruby Rose</h5>
+          <p class="card-text price">R$ 15,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Esponja Feels Soft Blender - Ruby Rose')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="bruma.png" class="card-img-top" alt="Bruma Hidratante Fixadora - Max Love">
+        <div class="card-body">
+          <h5 class="card-title">Bruma Hidratante Fixadora - Max Love</h5>
+          <p class="card-text price">R$ 15,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Bruma Hidratante Fixadora - Max Love')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="blindagem.png" class="card-img-top" alt="Blindagem Pop">
+        <div class="card-body">
+          <h5 class="card-title">Blindagem Pop</h5>
+          <p class="card-text price">R$ 18,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Blindagem Pop')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <img src="primer.png" class="card-img-top" alt="Primer 3 em 1 (30ml) - Max Love">
+        <div class="card-body">
+          <h5 class="card-title">Primer 3 em 1 (30ml) - Max Love</h5>
+          <p class="card-text price">R$ 12,00</p>
+          <button class="btn btn-dark w-100" onclick="adicionar('Primer 3 em 1 (30ml) - Max Love')">Adicionar</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+<footer class="text-center p-3 mt-5 bg-light">
+  <p>Siga-nos:</p>
+  <a href="https://www.instagram.com/morenabonita.cosmetics/" target="_blank">Instagram</a> |
+  <a href="https://wa.me/5549991572408" target="_blank">WhatsApp</a> |
+  <a href="morenabonita@gmail.com">E-mail</a>
+</footer>
+
+<script src="java.js"></script>
+</body>
+</html>
